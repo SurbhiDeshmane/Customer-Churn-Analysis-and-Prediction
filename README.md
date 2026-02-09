@@ -1,217 +1,146 @@
-# Customer-Churn-Analysis-and-Prediction
-📊 Customer Churn Analysis & Prediction
-🧠 Project Overview
-Customer churn is a critical challenge for subscription-based businesses. This project focuses on analyzing customer behavior, identifying churn patterns, and predicting customers at risk of churning using a combination of SQL, Power BI, and Machine Learning (Random Forest).
+# 📊 Customer Churn Analysis & Prediction
+
+## 🧠 Project Overview
+Customer churn is a critical challenge for subscription-based businesses. This project focuses on analyzing customer behavior, identifying churn patterns, and predicting customers at risk of churning using SQL, Power BI, and Machine Learning (Random Forest).
+
 The project is divided into two major parts:
+1. Churn Analysis (Descriptive Analytics)
+2. Churn Prediction (Predictive Analytics)
 
-Churn Analysis (Descriptive Analytics)
+Interactive dashboards are built in Power BI to deliver business-ready insights.
 
-Churn Prediction (Predictive Analytics)
+---
 
-Interactive dashboards are built in Power BI to provide business-ready insights and actionable intelligence.
+## 🎯 Objectives
+- Analyze customer churn trends and key drivers
+- Identify high-risk customer segments
+- Build a machine learning model to predict churn
+- Visualize predicted churners in Power BI
+- Demonstrate an end-to-end data analytics workflow
 
-🎯 Objectives
+---
 
-Understand customer churn trends and drivers
+## 🛠️ Technologies Used
 
-Identify high-risk customer segments
+### 🔹 Data Engineering & Cleaning
+- SQL  
+  - ETL (Extract, Transform, Load) process  
+  - Data cleaning and preprocessing  
+  - Handling missing values and duplicates  
+  - Feature engineering for analytics and ML  
 
-Build a machine learning model to predict churn
+### 🔹 Data Visualization
+- Power BI  
+  - Interactive dashboards  
+  - DAX measures and calculated columns  
+  - Filters, slicers, and drill-downs  
+  - KPI-based business insights  
 
-Visualize predicted churners for business decision-making
+### 🔹 Machine Learning
+- Random Forest Classifier  
+  - Churn prediction model  
+  - Feature importance analysis  
+  - Predicted results integrated into Power BI  
 
-Demonstrate an end-to-end data analytics workflow
+---
 
-🛠️ Technologies Used
-🔹 Data Engineering & Cleaning
-
-SQL
-
-ETL (Extract, Transform, Load) process
-
-Data cleaning and preprocessing
-
-Handling missing values, duplicates, and data normalization
-
-Feature preparation for analytics and ML
-
-🔹 Data Visualization
-
-Power BI
-
-Interactive dashboards
-
-DAX measures and calculated columns
-
-Filters, slicers, drill-downs
-
-Business-friendly KPIs
-
-🔹 Machine Learning
-
-Random Forest Classifier
-
-Churn prediction model
-
-Feature importance analysis
-
-Prediction results exported for visualization
-
-📂 Dataset Description
-
+## 📂 Dataset Description
 The dataset contains customer-level information including:
+- Demographics (Gender, Age Group, Marital Status)
+- Account details (Tenure, Contract Type, Payment Method)
+- Service usage (Internet Type, Streaming, Security, Support)
+- Financial metrics (Monthly Charges, Revenue, Refunds)
+- Target variable: Churn
 
-Demographics (Gender, Age Group, Marital Status)
+---
 
-Account details (Tenure, Contract Type, Payment Method)
+## 🔄 Project Workflow
 
-Service usage (Internet type, Streaming, Security, Support)
+1. Data Extraction  
+   - Raw customer data extracted and loaded into SQL  
 
-Financials (Monthly Charges, Revenue, Refunds)
+2. Data Cleaning & Transformation (SQL)  
+   - Removed inconsistencies and null values  
+   - Standardized categorical fields  
+   - Created tenure groups and churn indicators  
 
-Target variable: Churn
+3. Exploratory Data Analysis  
+   - Analyzed churn trends by demographics, geography, and services  
 
-🔄 Project Workflow
+4. Power BI Dashboard – Churn Analysis  
+   - KPI summary and churn distribution  
+   - Customer segmentation and trend analysis  
 
-Data Extraction
+5. Machine Learning – Churn Prediction  
+   - Random Forest model trained on cleaned data  
+   - Generated churn predictions  
 
-Raw customer data sourced and loaded into SQL
+6. Power BI Dashboard – Churn Prediction  
+   - Visualization of customers at risk  
+   - Risk profiling by tenure, age, and geography  
 
-Data Cleaning & Transformation (SQL)
+---
 
-Removed inconsistencies and null values
+## 📊 Dashboards
 
-Standardized categorical variables
+### 🔹 Churn Analysis – Summary Dashboard
+Key metrics and insights:
+- Total Customers: 3,195  
+- Churned Customers: 849  
+- Churn Rate: 27%  
 
-Created tenure groups and churn indicators
+Churn analysis by:
+- Gender
+- Age group
+- Payment method
+- Contract type
+- Tenure group
+- Internet service
+- State
 
-Exploratory Data Analysis
+---
 
-Churn trends by demographics, geography, services, and payment methods
-
-Power BI Dashboard – Churn Analysis
-
-KPI summary
-
-Customer segmentation
-
-Churn distribution and patterns
-
-Machine Learning – Churn Prediction
-
-Random Forest model trained on cleaned data
-
-Generated predicted churn labels
-
-Identified customers at high risk
-
-Power BI Dashboard – Churn Prediction
-
-Visualization of predicted churners
-
-Risk profiling by age, tenure, state, and services
-
-📊 Dashboards
-🔹 Churn Analysis – Summary Dashboard
-
-Key insights include:
-
-Total Customers: 3,195
-
-Churned Customers: 849
-
-Churn Rate: 27%
-
-Churn by:
-
-Gender
-
-Age group
-
-Payment method
-
-Contract type
-
-Tenure group
-
-Internet service
-
-State
-
-📌 Helps identify why customers are leaving.
-
-🔹 Churn Prediction Dashboard
-
+### 🔹 Churn Prediction Dashboard
 Highlights:
+- Predicted churners: 378 customers
+- Risk analysis by:
+  - Gender
+  - Age group
+  - Marital status
+  - Tenure
+  - Payment method
+  - Contract type
+  - Geography
+- Detailed “Customers at Risk” table for targeted actions
 
-Predicted Churners: 378 customers
+---
 
-Risk distribution by:
+## 🤖 Machine Learning Model
+- Algorithm: Random Forest Classifier  
+- Reason for selection:
+  - Handles non-linear relationships
+  - Performs well on mixed data types
+  - Reduces overfitting compared to single decision trees
 
-Gender
+- Output:
+  - Binary churn prediction (Yes/No)
+  - Prediction results visualized in Power BI
 
-Age group
+---
 
-Marital status
+## 📈 Key Business Insights
+- Month-to-month contracts show the highest churn
+- Fiber optic users have higher churn rates
+- Short-tenure customers are more likely to churn
+- Customers without bundled services show higher risk
+- Certain states consistently contribute more to churn
 
-Tenure
+---
 
-Payment method
+## 👩‍💻 Author
+Surbhi Deshmane  
+Aspiring Data Analyst  
 
-Contract type
+Skills: SQL | Power BI | Data Analysis | Machine Learning | ETL  
 
-Geography
-
-Detailed “Customers at Risk” table for targeted action
-
-📌 Helps identify who is likely to churn.
-
-🤖 Machine Learning Model
-
-Algorithm: Random Forest Classifier
-
-Why Random Forest?
-
-Handles non-linear relationships well
-
-Works effectively with mixed data types
-
-Reduces overfitting compared to single decision trees
-
-Model Output:
-
-Binary churn prediction (Yes / No)
-
-Prediction results integrated into Power BI for visualization
-
-📈 Key Business Insights
-
-Month-to-month contracts have the highest churn
-
-Fiber optic users show higher churn rates
-
-Short-tenure customers are more likely to churn
-
-Customers without bundled services are at higher risk
-
-Certain states consistently show higher churn probability
-
-🚀 Future Enhancements
-
-Model performance metrics (Accuracy, Precision, Recall, ROC-AUC)
-
-Compare Random Forest with Logistic Regression / XGBoost
-
-Deploy predictions using Python + Streamlit
-
-Automate data refresh in Power BI
-
-Add customer lifetime value (CLV) analysis
-
-👩‍💻 Author
-
-Surbhi Deshmane
-Aspiring Data Analyst
-Skills: SQL | Power BI | Data Analysis | Machine Learning | ETL
-
-📌 This project demonstrates an end-to-end data analytics pipeline from raw data to predictive insights.
+This project demonstrates an end-to-end data analytics pipeline from raw data to predictive insights.
